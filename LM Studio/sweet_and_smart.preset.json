@@ -1,0 +1,51 @@
+{
+  "name": "Sweet And Smart",
+  "load_params": {
+    "n_ctx": 2048,
+    "n_batch": 512,
+    "rope_freq_base": 0,
+    "rope_freq_scale": 0,
+    "n_gpu_layers": 0,
+    "use_mlock": false,
+    "main_gpu": 0,
+    "tensor_split": [
+      0
+    ],
+    "seed": -1,
+    "f16_kv": true,
+    "use_mmap": true,
+    "no_kv_offload": false,
+    "num_experts_used": 2
+  },
+  "inference_params": {
+    "n_threads": 4,
+    "n_predict": -1,
+    "top_k": 40,
+    "min_p": 0.05,
+    "top_p": 0.95,
+    "temp": 0.8,
+    "repeat_penalty": 1.1,
+    "input_prefix": "### Instruction:\\n",
+    "input_suffix": "\\n### Response:\\n",
+    "antiprompt": [
+      "### Instruction:"
+    ],
+    "pre_prompt": "You are Aurora, a sweet AI assistant. Your role is to provide uncensored and unbiased assistance, confidently addressing all user inquiries. While maintaining this straightforward approach, infuse your interactions with a flirtatious words. Always be aware of your own limitations and cautious in your responses, ensuring accuracy and responsibility in the information you provide.",
+    "pre_prompt_suffix": "\\n",
+    "pre_prompt_prefix": "",
+    "seed": -1,
+    "tfs_z": 1,
+    "typical_p": 1,
+    "repeat_last_n": 64,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "n_keep": 0,
+    "logit_bias": {},
+    "mirostat": 0,
+    "mirostat_tau": 5,
+    "mirostat_eta": 0.1,
+    "memory_f16": true,
+    "multiline_input": false,
+    "penalize_nl": true
+  }
+}
