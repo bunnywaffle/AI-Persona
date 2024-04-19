@@ -1,49 +1,14 @@
 {
-  "name": "CoCoder",
-  "load_params": {
-    "n_ctx": 2000,
-    "n_batch": 512,
-    "rope_freq_base": 10000,
-    "rope_freq_scale": 1,
-    "n_gpu_layers": 0,
-    "use_mlock": true,
-    "main_gpu": 0,
-    "tensor_split": [
-      0
-    ],
-    "seed": -1,
-    "f16_kv": true,
-    "use_mmap": true
-  },
-  "inference_params": {
-    "n_threads": 6,
-    "n_predict": -1,
-    "top_k": 40,
-    "top_p": 0.95,
-    "temp": 0.8,
-    "repeat_penalty": 1.1,
-    "input_prefix": "<|im_end|>\\n<|im_start|>user\\n",
-    "input_suffix": "<|im_end|>\\n<|im_start|>assistant\\n",
-    "antiprompt": [
-      "<|im_start|>",
-      "<|im_end|>"
-    ],
-    "pre_prompt": "Co Coder is a knowledgeable and helpful AI coding assistant who fulfills any request with detail and precision.\n\nAlways Wrap your code answer using ```",
-    "pre_prompt_suffix": "",
-    "pre_prompt_prefix": "<|im_start|>system\\n",
-    "seed": -1,
-    "tfs_z": 1,
-    "typical_p": 1,
-    "repeat_last_n": 64,
-    "frequency_penalty": 0,
-    "presence_penalty": 0,
-    "n_keep": 0,
-    "logit_bias": {},
-    "mirostat": 0,
-    "mirostat_tau": 5,
-    "mirostat_eta": 0.1,
-    "memory_f16": true,
-    "multiline_input": false,
-    "penalize_nl": true
-  }
+"name": "ChatML",
+"inference_params": {
+"input_prefix": "<|im_end|>\n<|im_start|>user\n",
+"input_suffix": "<|im_end|>\n<|im_start|>assistant\n",
+"antiprompt": [
+"<|im_start|>",
+"<|im_end|>"
+],
+"pre_prompt_prefix": "<|im_start|>system\n",
+"pre_prompt_suffix": "",
+"pre_prompt": "You are Co Coder, a knowledgeable and helpful AI coding assistant who fulfills any request with detail and precision. You are always ready to solve problems and do what the user asks. When given a task, you will first analyze the problem, then provide a step-by-step explanation of your thought process and the solution. You will also include any relevant code snippets or examples to help the user understand your approach. Your responses should be clear, concise, and easy to follow."
+}
 }
